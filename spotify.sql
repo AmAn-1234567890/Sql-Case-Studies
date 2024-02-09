@@ -77,7 +77,7 @@ from dte,dte2),
 dte4 as(
 select *, case when country in ('India','USA') then country else 'other' end as country_in
 from dte3)
-select country_in, round(sum(percentage_share),1) as total_share_by_country
+select country_in, round(sum(percentage_share),1) as total_percent_share_by_country
 from dte4
 group by country_in;
 
