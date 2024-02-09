@@ -57,7 +57,7 @@ select user_id, event_date, case when count(distinct event_name)=2 then 1 else 0
 from activity
 group by user_id,event_date
 order by event_date)
-select event_date, sum(active_users) 
+select event_date, sum(active_users) as No_of_users_who_purchased_SameDay 
 from cte
 group by event_date;
 
@@ -77,7 +77,7 @@ from dte,dte2),
 dte4 as(
 select *, case when country in ('India','USA') then country else 'other' end as country_in
 from dte3)
-select country_in, sum(percentage_share) as total_share_by_country
+select country_in, round(sum(percentage_share),1) as total_share_by_country
 from dte4
 group by country_in;
 
