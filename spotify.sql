@@ -45,7 +45,7 @@ group by event_date;
 
 -- 2) Find total active users by each week
 
-select event_date, count(distinct user_id)
+select event_date, count(distinct user_id) as Active_users_per_week
 from activity
 group by week(event_date);
 
