@@ -50,7 +50,7 @@ from activity
 group by week(event_date);
 
 
--- 3) Find datewise total number of users who purchased on the same date as they have installed it.alter
+-- 3) Find datewise total number of users who purchased on the same date as they have installed it.
 
 with cte as (
 select user_id, event_date, case when count(distinct event_name)=2 then 1 else 0 end as active_users
