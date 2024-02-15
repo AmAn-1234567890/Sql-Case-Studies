@@ -109,15 +109,6 @@ cte,cte2,cte3;
 
 -- Problem 4: What is the most purchased item on the menu and how many times it was purchased by all the customers?
 
--- 1st method
-
-select *, count(product_id) as cnt
-from sales
-group by product_id
-order by cnt desc;
-
--- Alternative method-complete solution
-
 -- 1st step
 
 select product_id
