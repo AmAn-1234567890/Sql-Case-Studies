@@ -62,7 +62,7 @@ order by userid;
 
 -- Problem 2: How many days has each customer visited zomato?
 
-select userid, count(distinct created_date) as No_f_days_visited_by_each_customer
+select userid, count(distinct created_date) as No_of_days_visited_by_each_customer
 from sales
 group by userid;
 
