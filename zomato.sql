@@ -131,14 +131,6 @@ order by userid;
 
 -- Problem 5: Which item is popular for each customer?
 
--- 1-2,2-3,3-2
-
-select userid,product_id,count(product_id)
-from sales
-group by userid;
-
--- 1-2,2-3,3-2
-
 -- 1st step
 
 select userid,product_id,count(product_id) as cnt
