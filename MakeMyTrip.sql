@@ -244,7 +244,7 @@ group by user_id)
 select *, datediff(last_booking_date,first_booking_date) as Difference
 from cte3;
 
--- Problem 5: Write a query to count the number of flight and hotel bookings in each of the user segments for the year 2022.alter
+-- Problem 5: Write a query to count the number of flight and hotel bookings in each of the user segments for the year 2022.
 
 # step1
 
