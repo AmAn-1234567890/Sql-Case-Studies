@@ -1,3 +1,5 @@
+--                                                 SPOTIFY Case Study
+
 -- Creating a database named "Spotify" 
 
 create database spotify;
