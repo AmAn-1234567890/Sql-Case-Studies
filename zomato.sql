@@ -1,3 +1,4 @@
+--                                            ZOMATO Case Study
 create database case_studies;
 use case_studies;
 drop table if exists goldusers_signup;
