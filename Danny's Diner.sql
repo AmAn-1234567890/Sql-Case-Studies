@@ -1,6 +1,6 @@
---                     DANNY'S DINER
+--                     DANNY'S DINER CASE STUDY
 
-use case_studies;
+
 
 
 CREATE TABLE sales_new (
