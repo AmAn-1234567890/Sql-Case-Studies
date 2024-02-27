@@ -102,7 +102,7 @@ where rnk=1;
 
 -- Solution:
 
--- Step 1: To find most purchased item
+-- Step 1: To find the most purchased item
 
 select product_name
 from sales_new s
