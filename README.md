@@ -1,2 +1,2 @@
 # Sql-Case-Studies
-A collection of case studies performed using sql
+A collection of Case Studies performed using SQL
